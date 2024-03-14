@@ -24,5 +24,8 @@ public class AccountTest {
         // Additional tasks
         myAccount.accoutNumber = 5;
         System.out.println(myAccount.accoutNumber);
+
+        // Close the Scanner object
+        input.close();
     }
 }
