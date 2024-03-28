@@ -64,11 +64,22 @@ public class Employee {
         System.out.println(employee.getSalary());
         System.out.println(employee.getBonus());
 
-        Scanner scanner = new Scanner(System.in);
-        scanner.nextLine();
-
-
         employee.printEmployee();
+
+        Scanner scanner = new Scanner(System.in);
+        String newEmployeeName = scanner.nextLine();
+        String newEmployeeSurname = scanner.nextLine();
+        Float newEmployeeSalary = scanner.nextFloat();
+        Float newEmployeeBonus = scanner.nextFloat();
+
+        Employee employee2 = new Employee(newEmployeeName, newEmployeeSurname, newEmployeeSalary, newEmployeeBonus);
+
+        System.out.println(employee2.getName());
+        System.out.println(employee2.getSurname());
+        System.out.println(employee2.getSalary());
+        employee2.increaseBonus();
+        System.out.println(employee2.getBonus());
+
 
         
     }

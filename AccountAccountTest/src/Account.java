@@ -1,6 +1,5 @@
 public class Account {
     private String name; // instance variable
-    private double balance;
 
     int accoutNumber; // default is public
 
